@@ -55,3 +55,13 @@ Warning: Permanently added ‘[ssh.github.com]:443,[207.97.227.248]:443’ (RSA)
 Hi zhou411424! You’ve successfully authenticated, but GitHub does not provide shell access.
 出现Hi xxx!……表示连接成功。
 ```
+
+# git commit里面记录的帐号，与你的帐号不一致
+
+1.先配置 git config --global user.name aaaa
+      git config --global user.email aaaa@163.com
+2.使用以下命令 修改commit 信息：
+```
+$ git commit --amend --reset-author
+
+```
