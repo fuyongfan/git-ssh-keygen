@@ -66,3 +66,7 @@ Hi zhou411424! You’ve successfully authenticated, but GitHub does not provide 
 $ git commit --amend --reset-author
 
 ```
+#提交代码  git gpush  || git push origin HEAD:refs/for/dev
+```
+git config --global alias.gpush '!f() { : push ; r=$1; [[ -z $r ]] && r=origin; b=$2; t=$(awk "{ print \$2 }" $(git rev-parse --git-dir)/HEAD); t=${t#refs/heads/}; [[ -z $b ]] && b=$t; cmd="git push $r HEAD:refs/for/$b%topic=$t"; echo $cmd; echo; $cmd; }; f'
+```
