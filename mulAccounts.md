@@ -21,3 +21,10 @@ IdentityFile ~/.ssh/id_rsa.fuyongfan01
 ```
 ## 添加公钥， 
 - github 添加完公钥时 使用命令  ssh -T git@github.com 测试并激活ssh
+
+## 多账户邮件和用户名的配置
+- 由配置全局改为：
+```
+git config user.email 526332289@qq.com
+git config user.name fuyongfan
+```
